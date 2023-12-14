@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+	int s_marks;
+	int t_marks = 0;
+
+	for (int class_room = 1; class_room <= 10; class_room++)
+	{
+		cout << "Class" << " " << class_room << endl;
+		for (int student = 1; student <= 5; student++)
+		{
+			cout << "Student" << " " << student << endl;
+			for (int subject = 1; subject <= 3; subject++)
+			{
+				cout << "Subject " << subject << ":" << " "; cin >> s_marks;
+				t_marks += s_marks;
+			}
+			cout << "Total Marks:" << " " << t_marks << endl;
+			t_marks = 0;
+		}
+	}
+}
